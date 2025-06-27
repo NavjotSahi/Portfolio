@@ -1,4 +1,0 @@
-streamlit
-pathlib
-PIL
-base64
