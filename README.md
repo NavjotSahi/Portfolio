@@ -41,10 +41,7 @@ cd Portfolio
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# 3. Install dependencies
-pip install -r requirements.txt
-
-# 4. Run the app
+# 3. Run the app
 streamlit run app.py
 ```
 
@@ -56,11 +53,10 @@ streamlit run app.py
 ├── app.py                  # Main Streamlit app
 ├── profile.jpg             # Your profile picture
 ├── Resume_Navjot.pdf       # Downloadable resume
+├── README.md               # You're here!
 ├── assets/
-│   └── leetcode.png        # Custom icon for Leetcode
-│   └── Screenshot.png
-├── requirements.txt        # Python dependencies
-└── README.md               # You're here!
+    └── leetcode.png        # Custom icon for Leetcode
+    └── Screenshot.png
 ```
 
 ---
