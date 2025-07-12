@@ -153,6 +153,34 @@ CUSTOM_CSS = """
     .project-card a { text-decoration: none; color: #4facfe; font-weight: 600; transition: color 0.3s ease; }
     .project-card a:hover { color: #00f2fe; }
 
+        /* --- NEW: Styling for Project Links --- */
+    .project-links {
+        display: flex;
+        gap: 1rem; /* Space between buttons */
+        margin-top: 1rem;
+    }
+    .project-link {
+        text-decoration: none;
+        color: #f0f2f5;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: all 0.3s ease;
+    }
+    .project-link:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #fff;
+    }
+    .project-link.demo-link {
+        /* Make the demo button stand out */
+        background-image: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+        color: #0f0c29;
+        font-weight: 600;
+        border: none;
+    }
+
 </style>
 """
 st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
