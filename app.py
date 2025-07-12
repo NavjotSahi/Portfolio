@@ -27,6 +27,14 @@ SOCIAL_MEDIA = {
     "Leetcode": {"url": "https://leetcode.com/u/NavjotSahi/", "icon": current_dir / "assets" / "leetcode.png"},
 }
 PROJECTS = {
+    "🛡️ AI-Powered Incident Response Platform": {
+        "stack": "Python, FastAPI, React, MongoDB, Hugging Face API, Render",
+        "description": [
+            "Architected a full-stack incident management platform using Python (FastAPI) and React, integrating a Hugging Face NLP model to automate the classification and triage of incoming alerts.",
+            "Engineered a RESTful API to provide full CRUD functionality and deployed the application to Render, creating a publicly accessible, interactive single-page application (SPA)."
+        ],
+        "link": "https://github.com/NavjotSahi/incident-platform"
+    },
     "🏆 AI-Powered Academic Dashboard & RAG Chatbot": {
         "stack": "Django, Streamlit, LangChain, Google Gemini, ChromaDB",
         "description": [
@@ -50,14 +58,6 @@ PROJECTS = {
             "Trained ResNet-50 on the Tomato Disease Dataset, achieving <b>99% accuracy</b>."
         ],
         # "link": "https://github.com/NavjotSahi/Tomato-Disease-Detection"
-    },
-    "🏆 Skincare Recommendation System": {
-        "stack": "Java, CNN, Collaborative Filtering",
-        "description": [
-            "Designed a CNN-based recommendation system in Java, leveraging collaborative filtering to personalize skincare recommendations.",
-            "Conducted user testing with a dataset of 1,000+ entries, improving recommendation accuracy by 15%."
-        ],
-        # "link": "https://github.com/NavjotSahi/Skincare-Recommendation-System"
     }
 }
 
