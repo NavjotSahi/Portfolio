@@ -302,18 +302,21 @@ st.write("---")
 for project, details in PROJECTS.items():
     description_html = "".join([f"<li>{item}</li>" for item in details["description"]])
     
-    # --- THIS IS THE FIX ---
+    # Create a container for the buttons
     links_html = '<div class="project-links">'
-
-    # Check if a 'link' key exists and is not empty for the project
-    if details.get("link"):
-        links_html += f'<a href="{details["demo"]}" target="_blank" class="project-link demo-link">▶️ View Live Demo</a>'
-        links_html += '</div>'
-    else:
-        links_html = ""  # If no link, create an empty string
-        links_html += '</div>'
     
-    # Now, build the final card HTML, including the link_html variable
+    # Check for the GitHub link (this part was already correct)
+    if details.get("link"):
+        links_html += f'<a href="{details.get("link")}" target="_blank" class="project-link">View Code on GitHub</a>'
+        
+    # --- THIS IS THE FIX ---
+    # Use .get("demo") to safely check for the Live Demo link
+    if details.get("demo"):
+        links_html += f'<a href="{details.get("demo")}" target="_blank" class="project-link demo-link">▶️ View Live Demo</a>'
+    
+    links_html += '</div>' # Close the button container
+    
+    # Build the final card HTML
     card_html = f"""
     <div class="project-card">
         <h3>{project}</h3>
