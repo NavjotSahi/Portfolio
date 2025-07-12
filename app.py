@@ -33,7 +33,8 @@ PROJECTS = {
             "Architected a full-stack incident management platform using Python (FastAPI) and React, integrating a Hugging Face NLP model to automate the classification and triage of incoming alerts.",
             "Engineered a RESTful API to provide full CRUD functionality and deployed the application to Render, creating a publicly accessible, interactive single-page application (SPA)."
         ],
-        "link": "https://github.com/NavjotSahi/incident-platform"
+        "link": "https://github.com/NavjotSahi/incident-platform",
+        "demo": "https://incident-platform-ui.onrender.com/"
     },
     "🏆 AI-Powered Academic Dashboard & RAG Chatbot": {
         "stack": "Django, Streamlit, LangChain, Google Gemini, ChromaDB",
@@ -95,14 +96,14 @@ CUSTOM_CSS = """
     /* --- HERO SECTION & SOCIAL ICONS --- */
     .stImage img { border-radius: 50%; border: 5px solid #fff; box-shadow: 0 10px 40px rgba(255, 255, 255, 0.2); }
     
-        /* Style for the description paragraph inside the hero container */
+    /* Style for the description paragraph inside the hero container */
     .hero-container p {
         font-size: 1rem;
         line-height: 1.6;
         margin-bottom: 0.5rem;
     }
       
-          /* Style for the new particle animation container */
+    /* Style for the new particle animation container */
     .particle-container {
         border-radius: 15px; /* Match the other cards */
         overflow: hidden;    /* Important to clip the iframe corners */
@@ -274,11 +275,15 @@ for project, details in PROJECTS.items():
     description_html = "".join([f"<li>{item}</li>" for item in details["description"]])
     
     # --- THIS IS THE FIX ---
+    links_html = '<div class="project-links">'
+
     # Check if a 'link' key exists and is not empty for the project
     if details.get("link"):
-        link_html = f"""<a href="{details['link']}" target="_blank">View Code on GitHub</a>"""
+        links_html += f'<a href="{details["demo"]}" target="_blank" class="project-link demo-link">▶️ View Live Demo</a>'
+        links_html += '</div>'
     else:
-        link_html = ""  # If no link, create an empty string
+        links_html = ""  # If no link, create an empty string
+        links_html += '</div>'
     
     # Now, build the final card HTML, including the link_html variable
     card_html = f"""
@@ -286,7 +291,7 @@ for project, details in PROJECTS.items():
         <h3>{project}</h3>
         <p class="tech-stack"><b>Tech Stack:</b> {details['stack']}</p>
         <ul>{description_html}</ul>
-        {link_html}
+        {links_html}
     </div>
     """
     st.markdown(card_html, unsafe_allow_html=True)
