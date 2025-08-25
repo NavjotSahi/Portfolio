@@ -34,7 +34,7 @@ PROJECTS = {
             "Engineered a RESTful API to provide full CRUD functionality and deployed the application to Render, creating a publicly accessible, interactive single-page application (SPA)."
         ],
         "link": "https://github.com/NavjotSahi/incident-platform",
-        "demo": "https://incident-platform-ui.onrender.com/"
+        "demo": "https://incident-platform-ui-o2nm.onrender.com/"
     },
     "🏆 AI-Powered Academic Dashboard & RAG Chatbot": {
         "stack": "Django, Streamlit, LangChain, Google Gemini, ChromaDB",
