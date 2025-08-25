@@ -2,7 +2,7 @@
 
 A beautifully designed, interactive digital CV and portfolio web app built using **Streamlit**, enhanced with **CSS animations**, **particles.js background**, and **custom skill cards**.
 
-> 🚀 Live Demo: [navjotsahi.streamlit.app](https://portfolio-ksmcx53axsewrzmdbywmdd.streamlit.app/)
+> 🚀 Live Demo: [navjotsahi.streamlit.app](https://portfolio-iya0.onrender.com/)
 
 ---
 
