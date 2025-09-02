@@ -335,7 +335,7 @@ st.write("---")
 st.markdown("""
     <div class="project-card">
         <h3>💼 Generative AI Intern | SmartBridge (Remote)</h3>
-        <p class="tech-stack"><i>June 2025 – Present</i></p>
+        <p class="tech-stack"><i>June 2025 – July 2025</i></p>
         <ul>
             <li>Completed 60-hour virtual internship focused on generative AI models (VAE, GAN, BERT, LSTM) and tools like Gemini and FastAPI, gaining hands-on experience in text generation, summarization, and chatbot development.</li>
         </ul>
