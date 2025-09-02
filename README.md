@@ -72,8 +72,6 @@ streamlit run app.py
 
 ## 📸 Screenshots
 
-> Add screenshots of your live app if you want, for example:
-
 ![Digital CV Screenshot](./assets/Screenshot.png)
 
 ---
